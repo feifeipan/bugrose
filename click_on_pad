@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<h2>Accept Body click event in pad</h2>
+<div id="test" style="width:200px;border:1px solid red;height:50px;">click me</div>
+<a href="##">test</a>
+<script type="text/javascript">
+document.body.onclick = function(e){
+	 alert("this is a click event : " + e.target.tagName);
+}
+var doubleTapTimer;
+document.body.ontouchend = function(e){
+	doubleTapTimer = setTimeout(function () {
+		doubleTapTimer = null;
+		
+		var point = e.changedTouches[0];
+
+		target = point.target;
+		while (target.nodeType != 1) target = target.parentNode;
+		
+		if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA') {
+			ev = window.document.createEvent('MouseEvents');
+			ev.initMouseEvent('click', true, true, e.view, 1,
+				point.screenX, point.screenY, point.clientX, point.clientY,
+				e.ctrlKey, e.altKey, e.shiftKey, e.metaKey,
+				0, null);
+			ev._fake = true;
+			target.dispatchEvent(ev);
+		}
+	}, 0);
+}
+
+
+</script>
+</body>
+</html>
