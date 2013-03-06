@@ -1,3 +1,3 @@
 bugrose
 =======
-# everyday work
+record everyday code
