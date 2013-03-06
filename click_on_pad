@@ -1,6 +1,3 @@
-#Description
-在IOS中，如果将click事件注册在document.body上，当用户点击空白区域，click事件不会触发。
-#Code
 <html>
 <head>
   <title></title>
