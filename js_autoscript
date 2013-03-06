@@ -1,0 +1,21 @@
+function alert(msg){
+	WScript.Echo(msg);
+};
+
+var ie=new ActiveXObject("InternetExplorer.Application");
+ie.navigate("http://www.baidu.com");
+ie.visible=1;
+var docX;
+(function(){
+	try{
+		docX=ie.document;
+	}catch(e){
+		arguments.callee();
+	}
+})();
+var win=docX.parentWindow;
+var doc=win.document;
+var h1=doc.createElement('h1');
+h1.innerHTML='just hack it!!!';
+doc.body.insertBefore(h1,doc.body.firstChild);
+win.alert("hello world");
