@@ -1,4 +1,12 @@
+<!------method 1----------->
 
 <link rel="dns-prefetch" href="http://www.google-analytics.com/">
 
 <meta http-equiv=”x-dns-prefetch-control” content=”off”>
+
+<!------method 2----------->
+
+<script>
+var img = new Image();
+img.src= "http://your-prefetch-dns-domain/dot.gif";
+</script>
