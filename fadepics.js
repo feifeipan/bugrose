@@ -1,3 +1,78 @@
+var G_adContentConfig = {
+	"allyesId":[{
+			'adid':1,
+			'code':"success",
+			'link':'http://pages.ctrip.com/commerce/promote/201206/hotel/jjjd/index.html',
+			'src': 'http://images3.ctrip.com/dj/201307/qx_580145.jpg',
+			'width' : 580,
+			'height' :145,
+			'clickTrackUrl' : 'http://crm.ws.ctrip.com/Customer-Market-Proxy/AdCallProxy.aspx?re=adt&t=3&a=67&s=9&url=http://pages.ctrip.com/commerce/promote/201206/hotel/jjjd/index.html',
+			'onloadTrackUrl': 'http://crm.ws.ctrip.com/Customer-Market-Proxy/AdCallProxy.aspx?re=adt&t=1&a=67&s=9'	
+		},
+		{
+			'adid':3,
+			'code':"success",
+			'link':'http://pages.ctrip.com/commerce/promote/201206/hotel/jjjd/index.html',
+			'src': 'http://images3.c-ctrip.com/dj/201307/md_580145.jpg',
+			'width' : 580,
+			'height' :145,
+			'clickTrackUrl' : 'http://crm.ws.ctrip.com/Customer-Market-Proxy/AdCallProxy.aspx?re=adt&t=3&a=67&s=9&url=http://pages.ctrip.com/commerce/promote/201206/hotel/jjjd/index.html',
+			'onloadTrackUrl': 'http://crm.ws.ctrip.com/Customer-Market-Proxy/AdCallProxy.aspx?re=adt&t=1&a=67&s=9'	
+		},
+		{	
+			'adid':12,
+			'code':"success",
+			'link':'http://pages.ctrip.com/commerce/promote/201206/hotel/jjjd/index.html',
+			'src': 'http://images3.c-ctrip.com/rk/201307/djfx580-145.jpg',
+			'width' : 580,
+			'height' :145,
+			'clickTrackUrl' : 'http://crm.ws.ctrip.com/Customer-Market-Proxy/AdCallProxy.aspx?re=adt&t=3&a=67&s=9&url=http://pages.ctrip.com/commerce/promote/201206/hotel/jjjd/index.html',
+			'onloadTrackUrl': 'http://crm.ws.ctrip.com/Customer-Market-Proxy/AdCallProxy.aspx?re=adt&t=1&a=67&s=9'	
+		},
+		{
+			'adid':23,
+			'code':"success",
+			'link':'http://pages.ctrip.com/commerce/promote/201206/hotel/jjjd/index.html',
+			'src': 'http://images3.c-ctrip.com/rk/201306/rj580x145a.png',
+			'width' : 580,
+			'height' :145,
+			'clickTrackUrl' : 'http://crm.ws.ctrip.com/Customer-Market-Proxy/AdCallProxy.aspx?re=adt&t=3&a=67&s=9&url=http://pages.ctrip.com/commerce/promote/201206/hotel/jjjd/index.html',
+			'onloadTrackUrl': 'http://crm.ws.ctrip.com/Customer-Market-Proxy/AdCallProxy.aspx?re=adt&t=1&a=67&s=9'	
+		},
+		{
+			'adid':11,
+			'code':"success",
+			'link':'http://pages.ctrip.com/commerce/promote/201206/hotel/jjjd/index.html',
+			'src': 'http://images3.c-ctrip.com/dj/201307/kpq_580145.jpg',
+			'width' : 580,
+			'height' :145,
+			'clickTrackUrl' : 'http://crm.ws.ctrip.com/Customer-Market-Proxy/AdCallProxy.aspx?re=adt&t=3&a=67&s=9&url=http://pages.ctrip.com/commerce/promote/201206/hotel/jjjd/index.html',
+			'onloadTrackUrl': 'http://crm.ws.ctrip.com/Customer-Market-Proxy/AdCallProxy.aspx?re=adt&t=1&a=67&s=9'	
+		},
+		{
+			'adid':2,
+			'code':"success",
+			'link':'http://pages.ctrip.com/commerce/promote/201206/hotel/jjjd/index.html',
+			'src': 'http://images3.c-ctrip.com/rk/201306/580x145_hcp.jpg',
+			'width' : 580,
+			'height' :145,
+			'clickTrackUrl' : 'http://crm.ws.ctrip.com/Customer-Market-Proxy/AdCallProxy.aspx?re=adt&t=3&a=67&s=9&url=http://pages.ctrip.com/commerce/promote/201206/hotel/jjjd/index.html',
+			'onloadTrackUrl': 'http://crm.ws.ctrip.com/Customer-Market-Proxy/AdCallProxy.aspx?re=adt&t=1&a=67&s=9'	
+		}
+
+	],
+	"allyesId2":[{
+			'adid':21,
+			'code':"success",
+			'link':'http://pages.ctrip.com/commerce/promote/201206/hotel/jjjd/index.html',
+			'src': 'http://images3.c-ctrip.com/rk/201306/580x145_hcp.jpg',
+			'width' : 580,
+			'height' :145,
+			'clickTrackUrl' : 'http://crm.ws.ctrip.com/Customer-Market-Proxy/AdCallProxy.aspx?re=adt&t=3&a=67&s=9&url=http://pages.ctrip.com/commerce/promote/201206/hotel/jjjd/index.html',
+			'onloadTrackUrl': 'http://crm.ws.ctrip.com/Customer-Market-Proxy/AdCallProxy.aspx?re=adt&t=1&a=67&s=9'	
+	}]
+};
+
 function isCanvasSupported(){
   var elem = document.createElement('canvas');
   return !!(elem.getContext && elem.getContext('2d'));
